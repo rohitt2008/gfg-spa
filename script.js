@@ -29,6 +29,25 @@ function changeContent(page){
 					informative SPAs.
 				</p>
       `;
+    case 'problems':
+      contentDiv.innerHTML = `
+        <h2>Problems</h2>
+        <ul>
+          <li>
+            <input type="checkbox" class="solved-checkbox" data-id="two-sum">
+      <a href="https://practice.geeksforgeeks.org/problems/two-sum/0" target="_blank">Two Sum</a>
+          </li>
+          <li>
+            <input type="checkbox" class= "solved-checkbox" data-id="binary-search">
+      <a href="https://practice.geeksforgeeks.org/problems/binary-search/1" target="_blank">Binary Search</a>
+          </li>
+          <li>
+      <input type="checkbox" class="solved-checkbox" data-id="reverse-array">
+      <a href="https://practice.geeksforgeeks.org/problems/reverse-array/0" target="_blank">Reverse Array</a>
+          </li>
+        </ul>
+      ` 
+      addSolvedTracker();
       break;
     case 'contact':
       contentDiv.innerHTML = `
