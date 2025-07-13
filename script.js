@@ -31,6 +31,8 @@ function changeContent(page){
       `;
     case 'problems':
       contentDiv.innerHTML = `
+        <h1>Total Solved Questions:</h1>
+        <p id="solved-count"></p>
         <h2>Problems</h2>
         <ul>
           <li>
@@ -44,6 +46,14 @@ function changeContent(page){
           <li>
       <input type="checkbox" class="solved-checkbox" data-id="reverse-array">
       <a href="https://practice.geeksforgeeks.org/problems/reverse-array/0" target="_blank">Reverse Array</a>
+          </li>
+          <li>
+            <input type="checkbox" class="solved-checkbox" data-id="merge-sorted-arrays">
+      <a href="https://practice.geeksforgeeks.org/problems/merge-sorted-arrays/0" target="_blank">Merge Sorted Arrays</a>
+          </li>
+          <li>
+            <input type="checkbox" class="solved-checkbox" data-id="find-duplicates">
+      <a href="https://practice.geeksforgeeks.org/problems/find-duplicates/0" target="_blank">Find Duplicates</a>
           </li>
         </ul>
       ` 
